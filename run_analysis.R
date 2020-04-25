@@ -83,7 +83,7 @@ train <- cbind(train_subj,train_y,train_x)
 ## Merges the training and the test sets to create one data set.
 all_data <- rbind(test,train)
 
-
+## Group data by subject and activity
 groupped_data <- group_by(all_data, subject, activity)
 
 
